@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Best Friend's Day! 💖</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;600;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Canvas for interactive heart/star particles -->
+    <canvas id="heartCanvas"></canvas>
+
+    <!-- Floating background decorative hearts -->
+    <div class="floating-decorations" id="floatingDecorations"></div>
+
+    <main class="app-container">
+
+        <!-- ================= SLIDE 1: THE PROPOSAL ================= -->
+        <section id="proposalSlide" class="slide active">
+            <div class="glass-card proposal-card">
+                <div class="icon-container">
+                    <div class="heart-pulse-svg">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 28.5S2 16.5 2 9.5a7.5 7.5 0 0 1 12.8-5.3L16 5.5l1.2-1.3A7.5 7.5 0 0 1 30 9.5c0 7-14 19-14 19z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="proposal-title" id="proposalTitle">Will you be my bestfriend for life? 🥺👉👈</h1>
+
+                <div class="btn-group" id="btnGroup">
+                    <button id="yesBtn" class="btn btn-yes">Yes</button>
+                    <button id="noBtn" class="btn btn-no">No</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 2: THINGS I ADORE ================= -->
+        <section id="adoreSlide" class="slide">
+            <div class="glass-card adore-card-container">
+                <h2 class="section-title">Why My Heart Feels Safest With You in This World 🏠✨</h2>
+
+                <div class="adore-grid">
+                    <div class="adore-grid-item" style="grid-column: span 2;">
+                        <div class="adore-header">
+                            <span class="adore-icon">🏠</span>
+                            <span class="adore-headline">My Safe Space</span>
+                        </div>
+                        <p class="adore-desc">Your presence is a quiet sanctuary. No matter how loud or chaotic the world gets, being around you brings instant peace and calm.</p>
+                    </div>
+
+                    <div class="adore-grid-item">
+                        <div class="adore-header">
+                            <span class="adore-icon">⛈️</span>
+                            <span class="adore-headline">Weathering My Storms</span>
+                        </div>
+                        <p class="adore-desc">You have a rare ability to understand my silence. Thank you for never judging my dark days, but patiently sitting with me until the sun comes back.</p>
+                    </div>
+
+                    <div class="adore-grid-item" style="grid-column: span 3;">
+                        <div class="adore-header">
+                            <span class="adore-icon">✨</span>
+                            <span class="adore-headline">Making Me Feel Seen</span>
+                        </div>
+                        <p class="adore-desc">You see the real me, even when I feel completely invisible. You validate my feelings and remind me of who I am when I start to doubt.</p>
+                    </div>
+
+                    <div class="adore-grid-item" style="grid-column: span 2;">
+                        <div class="adore-header">
+                            <span class="adore-icon">🏡</span>
+                            <span class="adore-headline">A Home in My Heart</span>
+                        </div>
+                        <p class="adore-desc">Some people are just passing visitors in life, but you've built a permanent home in my heart. You're my favorite hello and my hardest goodbye.</p>
+                    </div>
+
+                    <div class="adore-grid-item">
+                        <div class="adore-header">
+                            <span class="adore-icon">❤️</span>
+                            <span class="adore-headline">A Safe & Gentle Heart</span>
+                        </div>
+                        <p class="adore-desc">Your heart is incredibly soft and protective. It's the only place in the world where my own heart feels entirely safe and understood.</p>
+                    </div>
+                </div>
+
+                <!-- Bottom: Polaroid photo -->
+                <div class="adore-image-side">
+                    <div class="polaroid-wrapper" id="polaroidAdore">
+                        <div class="polaroid">
+                            <img src="hug_backup.png" alt="Warmest Hugs">
+                            <div class="polaroid-caption">Warmest Hugs for the bestest person i could ever ask god for 🥹🫂</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adore-footer">
+                    <button id="adoreNextBtn" class="btn btn-primary">Something even more special for you</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 3: THE ULTIMATE TRIBUTE ================= -->
+        <section id="tributeSlide" class="slide">
+            <h2 class="section-title tribute-heading">Cheers to almost 2 years of our togetherness and friendship 🥂✨</h2>
+            <div class="tribute-layout">
+
+                <!-- Left Image Column -->
+                <div class="tribute-side col-left">
+                    <div class="polaroid-wrapper" id="polaroidLeft">
+                        <div class="polaroid">
+                            <img src="image%201.png" alt="Best Friend Moment 1">
+                            <div class="polaroid-caption">You and Me 🤍</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle Text Column -->
+                <div class="tribute-middle-card glass-card">
+                    <div class="tribute-scroll-area">
+                        <p class="tribute-para">To the one who made me feel safe in a world that often didn't, 🌎🫂</p>
+                        <p class="tribute-para">The one who never judged my storms, but sat beside me while they passed.
+                            ⛈️🤍</p>
+                        <p class="tribute-para">Thank you for being my safe space, my comfort zone, and the person who
+                            made me feel seen when I felt invisible. 🏡✨</p>
+                        <p class="tribute-para">Thank you for being the place I ran to when everything felt too loud,
+                            too heavy, too much. 🫶🏻</p>
+                        <p class="tribute-para">Thank you for making me feel seen when I felt invisible, and valid when
+                            I was busy doubting every piece of myself. 🌻❤️</p>
+                        <p class="tribute-para">You were my safe space. My comfort zone. My favorite hello and the
+                            hardest goodbye. 🏡💫👋🥀</p>
+                        <p class="tribute-para">I hope that whenever my arms can't hug you, my prayers always do. I hope
+                            life gives you the kind of love, peace, and happiness you deserve. 🌷🕊️✨</p>
+                        <p class="tribute-para">Some people leave footprints on our hearts. 👣 ❤️<br>You left a home in
+                            mine. 🏠🤍</p>
+                        <p class="tribute-para">And if one day we become strangers, know that I'll always be grateful
+                            for the version of me that existed because of you. 👤✨</p>
+                        <p class="tribute-para">And wherever life takes you, I hope it is gentle with your heart , the
+                            same heart that once made mine feel safe. 🫂❤️</p>
+                        <p class="tribute-final-greeting">Happy Best Friend Day, bitch! ❤️🫂🥹</p>
+                    </div>
+                </div>
+
+                <!-- Right Image Column -->
+                <div class="tribute-side col-right">
+                    <div class="polaroid-wrapper" id="polaroidRight">
+                        <div class="polaroid">
+                            <img src="image%202.png" alt="Best Friend Moment 2">
+                            <div class="polaroid-caption">My Favorite Person ✨</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Music Toggle button -->
+    <button id="musicToggle" class="music-toggle-btn" aria-label="Toggle Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-waves">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </button>
+    <audio id="bgMusic" src="The%20Police%20-%20Every%20Breath%20You%20Take%20%28Official%20Music%20Video%29.mp3" autoplay loop></audio>
+
+    <!-- Main script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
